@@ -4,6 +4,7 @@ metadata:
   name: redis
   namespace: kubernetes
 spec:
+  replicas: 1
   selector:
     project: roboshop
     environment: dev
