@@ -17,7 +17,7 @@ spec:
         project: roboshop
         environment: dev
         component: catalogue
-        tier: db
+        tier: backend
     spec:
       containers:
       - name: catalogue
@@ -48,7 +48,7 @@ spec:
     project: roboshop
     environment: dev
     component: catalogue
-    tier: db
+    tier: backend
   ports:
   - protocol: TCP
     port: 8080
