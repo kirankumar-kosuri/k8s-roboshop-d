@@ -27,8 +27,8 @@ spec:
         environment: dev
         component: user
         tier: backend
-  spec:
-    - containers:
+    spec:
+      containers:
         name: user
         image: kirankumarkosuri/user:v1
         imagePullPolicy: Always
