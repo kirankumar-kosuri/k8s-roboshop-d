@@ -57,6 +57,6 @@ spec:
     component: user
     tier: backend
   ports:
-  - protocol: TCP\
+  - protocol: TCP
     port: 8080
     targetPort: 8080
