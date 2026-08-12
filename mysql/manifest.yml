@@ -14,7 +14,7 @@ metadata:
   name: mysql
   namespace: roboshop
 spec:
-  replicas:
+  replicas: 1
   selector:
     matchLabels:
       project: roboshop
