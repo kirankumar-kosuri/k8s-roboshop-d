@@ -19,8 +19,8 @@ spec:
       labels:
         project: roboshop
         environment: dev
-        component: mongodb
-        tier: db
+        component: catalogue
+        tier: backend
 
     spec:
       containers:
