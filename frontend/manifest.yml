@@ -23,9 +23,6 @@ spec:
       - name: cart
         image: kirankumarkosuri/frontend:v1
         imagePullPolicy: Always
-        envFrom:
-        - configMapRef:
-            name: frontend
         readinessProbe:
             httpGet:
               path: /
