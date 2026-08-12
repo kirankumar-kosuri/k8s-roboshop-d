@@ -31,6 +31,9 @@ spec:
       containers:
         name: user
         image: kirankumarkosuri/user:v1
+        envFrom:
+        - configMapRef:
+            name: user
         imagePullPolicy: Always
         readinessProbe:
           httpGet:
