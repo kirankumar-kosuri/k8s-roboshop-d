@@ -27,7 +27,7 @@ spec:
         environment: dev
         component: user
         tier: backend
-    spec:
+  spec:
     - containers:
         name: user
         image: kirankumarkosuri/user:v1
