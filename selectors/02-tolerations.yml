@@ -27,4 +27,4 @@ spec:
       - key: "course"
         operator: "Equal"
         value: "k8s"
-        effect: "NoSchedule"                                                                                      │
+        effect: "NoSchedule"
