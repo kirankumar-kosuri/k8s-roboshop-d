@@ -4,19 +4,19 @@ metadata:
   name: nginx
   namespace: roboshop
   labels:
+    purpose: deployment
     project: roboshop
-    purpose: taint-node
 spec:
   replicas: 1
-  selector: 
+  selector:
     matchLabels:
+      purpose: deployment
       project: roboshop
-      purpose: taint-node
   template:
     metadata:
       labels:
+        purpose: deployment
         project: roboshop
-        purpose: taint-node
     spec:
       containers:
       - name: nginx
