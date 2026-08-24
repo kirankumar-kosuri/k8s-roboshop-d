@@ -21,3 +21,10 @@ spec:
       containers:
       - name: nginx
         image: nginx
+      nodeSelector:
+        kubernetes.io/hostname: ip-192-168-1-38.ec2.internal
+      tolerations:
+      - key: "course"
+        operator: "Equal"
+        value: "k8s"
+        effect: "NoSchedule"                                                                                      │
