@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: taints-tolerations
+  namespace: roboshop
+  labels:
+    purpose: taints-tolerations
+    project: roboshop
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      purpose: taints-tolerations
+      project: roboshop
+  template:
+    metadata:
+      labels:
+        purpose: taints-tolerations
+        project: roboshop
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
