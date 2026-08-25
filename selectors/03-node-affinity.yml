@@ -14,10 +14,10 @@ spec:
               - us-east-1a 
 
           - matchExpressions:
-            - key: name
+            - key: disktype
               operator: In
               values:
-              - kiran    
+              - ssd
    containers:
     - name: nginx
       image: nginx:latest
