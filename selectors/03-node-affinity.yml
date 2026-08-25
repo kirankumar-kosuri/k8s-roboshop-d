@@ -16,6 +16,15 @@ spec:
             operator: In
             values:
             - ssd 
+
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 1
+        preference:
+          matchExpressions:
+          - key: disktype
+            operator: In
+            values:
+            - hdd
   containers:
   - name: nginx
     image: nginx
