@@ -11,13 +11,11 @@ spec:
           - key: topology.kubernetes.io/zone
             operator: In
             values:
-            - us-east-1b 
-
-        - matchExpressions:
-          - key: name
+            - us-east-1b
+          - key: disktype
             operator: In
             values:
-            - kiran
+            - ssd 
   containers:
   - name: nginx
     image: nginx
