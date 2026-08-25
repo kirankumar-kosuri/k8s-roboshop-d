@@ -10,6 +10,7 @@ spec:
     image: nginx
     imagePullPolicy: Always
 ---
+
 apiVersion: v1
 kind: Pod
 metadata:
