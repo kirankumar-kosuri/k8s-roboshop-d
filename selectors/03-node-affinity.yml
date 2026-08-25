@@ -21,10 +21,10 @@ spec:
       - weight: 1
         preference:
           matchExpressions:
-          - key: disktype
+          - key: name
             operator: In
             values:
-            - hdd
+            - k8s
   containers:
   - name: nginx
     image: nginx
