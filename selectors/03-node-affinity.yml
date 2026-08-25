@@ -12,12 +12,11 @@ spec:
             operator: In
             values:
             - us-east-1b
-
         - matchExpressions:
-          - key: course
+          - key: disktype
             operator: In
             values:
-            - kubernetes
+            - ssd
   containers:
   - name: nginx
     image: nginx
