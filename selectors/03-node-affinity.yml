@@ -12,19 +12,19 @@ spec:
             operator: In
             values:
             - us-east-1b
-          - key: disktype
-            operator: In
-            values:
-            - ssd 
-
-      preferredDuringSchedulingIgnoredDuringExecution:
-      - weight: 1
-        preference:
-          matchExpressions:
           - key: name
             operator: In
             values:
             - k8s
+
+      # preferredDuringSchedulingIgnoredDuringExecution:
+      # - weight: 1
+      #   preference:
+      #     matchExpressions:
+      #     - key: name
+      #       operator: In
+      #       values:
+      #       - k8s
   containers:
   - name: nginx
     image: nginx
