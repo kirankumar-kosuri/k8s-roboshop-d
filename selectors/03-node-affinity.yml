@@ -12,19 +12,27 @@ spec:
             operator: In
             values:
             - us-east-1b
-          - key: name
+          # - key: name
+          #   operator: In
+          #   values:
+          #   - k8s
+
+      preferredDuringSchedulingIgnoredDuringExecution:
+      - weight: 10
+        preference:
+          matchExpressions:
+          - key: project
             operator: In
             values:
-            - k8s
+            - roboshop
 
-      # preferredDuringSchedulingIgnoredDuringExecution:
-      # - weight: 1
-      #   preference:
-      #     matchExpressions:
-      #     - key: name
-      #       operator: In
-      #       values:
-      #       - k8s
+      - weight: 5
+        preference:
+          matchExpressions:
+          - key: project
+            operator: In
+            values:
+            - amazon
   containers:
   - name: nginx
     image: nginx
