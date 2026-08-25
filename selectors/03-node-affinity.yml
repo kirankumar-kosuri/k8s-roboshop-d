@@ -3,16 +3,16 @@ kind: Pod
 metadata:
   name: nginx
 spec:
-    affinity:
-      nodeAffinity:
-        requiredDuringSchedulingIgnoredDuringExecution:
-          nodeSelectorTerms:
-          - matchExpressions:
-            - key: topology.kubernetes.io/zone
-              operator: In
-              values:
-              - us-east-1c 
-      containers:
-      - name: nginx
-        image: nginx
-        imagePullPolicy: IfNotPresent
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: topology.kubernetes.io/zone
+            operator: In
+            values:
+            - us-east-1c        
+  containers:
+  - name: nginx
+    image: nginx
+    imagePullPolicy: Always
