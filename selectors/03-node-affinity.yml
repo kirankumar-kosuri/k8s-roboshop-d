@@ -12,6 +12,12 @@ spec:
             operator: In
             values:
             - us-east-1b
+
+        - matchExpressions:
+          - key: course
+            operator: In
+            values:
+            - kubernetes
   containers:
   - name: nginx
     image: nginx
